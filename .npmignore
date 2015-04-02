@@ -1,0 +1,5 @@
+node_modules
+xcuserdata
+.idea
+*.log
+project.xcworkspace

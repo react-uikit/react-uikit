@@ -1,0 +1,22 @@
+{
+  "name": "react-uikit",
+  "version": "0.1.0",
+  "description": "UIkit components built with React.",
+  "author": "Yuanyan Cao",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuanyan/react-uikit.git"
+  },
+  "devDependencies": {
+    "react-native": "^0.3.2"
+  },
+  "scripts": {
+    "test": "echo \"no tests yet\" && exit 0"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "uikit"
+  ]
+}
