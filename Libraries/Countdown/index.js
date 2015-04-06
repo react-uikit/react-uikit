@@ -9,7 +9,7 @@ var {
     Text,
 } = React;
 
-var PRECISION  = 500; // 0.5 seconds, used to update the view
+var PRECISION = 500; // 0.5 seconds, used to update the view
 function format(num){ return (num < 10)? '0'+num: num}
 
 module.exports = React.createClass({
