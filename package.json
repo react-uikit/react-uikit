@@ -1,6 +1,6 @@
 {
   "name": "react-uikit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "Libraries/index",
   "description": "A comprehensive collection of React Native components.",
   "author": "Yuanyan Cao",
