@@ -5,7 +5,7 @@ A `<LinearGradient>` component for react-native.
 ### Usage
 
 1. Open your project in XCode, right click on `Libraries` and click `Add
-   Files to "Your Project Name" [(Screenshot)](http://url.brentvatne.ca/g9Wp).
+   Files to "Your Project Name".
 2. Add `libRCTLinearGradient.a` to `Build Phases -> Link Binary With Libraries`
    [(Screenshot)](http://url.brentvatne.ca/g9Wp).
 3. Click on `RCTLinearGradient.xcodeproj` in `Libraries` and go the `Build

@@ -16,27 +16,38 @@
 'use strict';
 
 var React = require('react-native');
+var Camera = require('../../Libraries/Camera');
 
 var {
   StyleSheet,
   Text,
   Image,
+  TouchableHighlight,
   View,
 } = React;
 
-
 module.exports = React.createClass({
 
-
   render: function() {
-
     return (
-        <View style={{flex:1}}>
-
-        </View>
-
+      <View>
+        <TouchableHighlight onPress={this.switchCamera}>
+          <View>
+            <Camera
+              ref="cam"
+              aspect="Stretch"
+              orientation="PortraitUpsideDown"
+              style={{height: 200, width: 200}}
+            />
+          </View>
+        </TouchableHighlight>
+      </View>
     );
+  },
+  switchCamera: function() {
+    this.refs.cam.switch();
   }
+
 });
 
 var styles = StyleSheet.create({
