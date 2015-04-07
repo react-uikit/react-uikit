@@ -70,7 +70,7 @@ module.exports = React.createClass({
     this.fetchData();
   },
   fetchData () {
-    fetch('http://hws.m.SampleApp.com/cache/wdetail/5.0/?id=' + (this.props.id || 44141651091) )
+    fetch('http://hws.m.taobao.com/cache/wdetail/5.0/?id=' + (this.props.id || 44141651091) )
       .then((response) => response.json())
       .then((responseData) => {
         this.setState({

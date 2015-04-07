@@ -101,7 +101,7 @@ module.exports = React.createClass({
     this.fetchData();
   },
   fetchData: function() {
-    fetch('http://s.m.SampleApp.com/search?n=20&page=1')
+    fetch('http://s.m.taobao.com/search?n=20&page=1')
       .then((response) => response.json())
       .then((responseData) => {
         this.setState({
