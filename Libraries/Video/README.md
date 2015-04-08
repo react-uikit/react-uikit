@@ -13,7 +13,7 @@ A <Video> component for react-native.
    isn't, then add it. This is so XCode is able to find the headers that
    the `RCTVideo` source files are referring to by pointing to the
    header files installed within the `react-native` `node_modules`
-   directory. [(Screenshot)](http://url.brentvatne.ca/7wE0).
+   directory.
 4. Whenever you want to use it within React code now you can: `var Video =
    require('react-uikit/Video');`
 
