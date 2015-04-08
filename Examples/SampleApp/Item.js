@@ -16,6 +16,7 @@
 'use strict';
 
 var React = require('react-native');
+var Portal = require('Portal');
 var Carousel = require('../../Libraries/Carousel');
 var Button = require('../../Libraries/Button');
 var Separator = require('../../Libraries/Separator');
@@ -52,12 +53,36 @@ module.exports = React.createClass({
                     <Text style={styles.smallText}>收藏</Text>
                 </View>
 
-                <Button style={styles.cartBtn}><Text>加入购物车</Text></Button>
-                <Button style={styles.buyBtn}><Text>立即购买</Text></Button>
+                <Button onPress={this.showModal} style={styles.cartBtn}>加入购物车</Button>
+                <Button onPress={this.showModal} style={styles.buyBtn}>立即购买</Button>
             </View>
         </View>
 
         )
+  },
+
+  showModal (){
+
+    var modal = <View style={{
+        backgroundColor: '#ff4400',
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        right: 0,
+        bottom: 0
+      }}>
+    <Button onPress={this.closeModal} style={{
+        flex:1,
+        color: 'white',
+        lineHeight: 100
+        }}>关闭</Button>
+      </View>
+    Portal.showModal(modal);
+
+  },
+
+  closeModal (){
+    Portal.closeModal();
   },
 
   getInitialState () {

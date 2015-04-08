@@ -5,64 +5,11 @@ var {
   Text,
   View,
   Image,
+  ScrollView,
   ListView,
   StyleSheet,
   TouchableOpacity,
 } = React;
-
-var styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: 'white',
-    },
-    loadingText: {
-        fontSize: 25,
-        textAlign: 'center',
-        marginTop: 10,
-        marginBottom: 10,
-        marginRight: 10,
-        color: '#FF6600'
-    },
-    listView:{
-        backgroundColor: 'white',
-    },
-    cellContainer: {
-        flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: 4,
-        backgroundColor: 'white',
-    },
-    itemDetailsContainer:{
-        flex: 1,
-        paddingLeft: 4,
-    },
-    itemPic: {
-        width: 90,
-        height: 90,
-    },
-    itemTitle: {
-        fontSize: 12,
-        textAlign: 'left',
-        marginTop: 10,
-        marginRight: 10,
-        color: 'black'
-    },
-    itemPrice: {
-        fontSize: 14,
-        textAlign: 'left',
-        marginTop: 8,
-        color: '#FF4400'
-    },
-    itemSold: {
-        fontSize: 10,
-        textAlign: 'left',
-        marginTop: 4,
-        marginBottom: 4,
-        color: '#aaaaaa'
-    }
-});
 
 var ItemCell = React.createClass({
     render: function() {
@@ -122,8 +69,17 @@ module.exports = React.createClass({
       );
     }
     return (
-      this.renderListView()
+      <ScrollView stickyHeaderIndices={[0]}>
+        {this.renderBar()}
+        {this.renderListView()}
+      </ScrollView>
     );
+  },
+  renderBar: function(){
+    return (<View style={{height: 40,  backgroundColor: '#ffffff', borderColor: '#cccccc', borderBottomWidth: 1}}>
+      <Text style={{borderColor: '#cccccc', borderWidth: 1, lineHeight: 40 }}>销量优先</Text>
+        <Text style={{borderColor: '#cccccc', borderWidth: 1, lineHeight: 40 }}>免运费</Text>
+    </View>);
   },
   renderListView: function(){
     return(
@@ -157,4 +113,58 @@ module.exports = React.createClass({
     });
   },
 
+});
+
+var styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: 'white',
+    },
+    loadingText: {
+        fontSize: 25,
+        textAlign: 'center',
+        marginTop: 10,
+        marginBottom: 10,
+        marginRight: 10,
+        color: '#FF6600'
+    },
+    listView:{
+        backgroundColor: 'white',
+    },
+    cellContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 4,
+        backgroundColor: 'white',
+    },
+    itemDetailsContainer:{
+        flex: 1,
+        paddingLeft: 4,
+    },
+    itemPic: {
+        width: 90,
+        height: 90,
+    },
+    itemTitle: {
+        fontSize: 12,
+        textAlign: 'left',
+        marginTop: 10,
+        marginRight: 10,
+        color: 'black'
+    },
+    itemPrice: {
+        fontSize: 14,
+        textAlign: 'left',
+        marginTop: 8,
+        color: '#FF4400'
+    },
+    itemSold: {
+        fontSize: 10,
+        textAlign: 'left',
+        marginTop: 4,
+        marginBottom: 4,
+        color: '#aaaaaa'
+    }
 });
