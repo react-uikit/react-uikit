@@ -24,7 +24,6 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		DE6C3C6A1AD3B612004E79F4 /* libRCTLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6C3C641AD3B5D1004E79F4 /* libRCTLinearGradient.a */; };
 		DE6C3C771AD3B79F004E79F4 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6C3C761AD3B791004E79F4 /* libRCTVideo.a */; };
-		DE6C3C781AD3B7A3004E79F4 /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6C3C701AD3B76B004E79F4 /* libRCTCamera.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,13 +97,6 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RCTLinearGradient;
 		};
-		DE6C3C6F1AD3B76B004E79F4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DE6C3C6B1AD3B76B004E79F4 /* RCTCamera.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4107012F1ACB723B00C6AA39;
-			remoteInfo = RCTCamera;
-		};
 		DE6C3C751AD3B791004E79F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DE6C3C711AD3B790004E79F4 /* RCTVideo.xcodeproj */;
@@ -134,7 +126,6 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		DE6C3C5B1AD3B5D1004E79F4 /* RCTLinearGradient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinearGradient.xcodeproj; path = ../../Libraries/LinearGradient/RCTLinearGradient.xcodeproj; sourceTree = "<group>"; };
-		DE6C3C6B1AD3B76B004E79F4 /* RCTCamera.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCamera.xcodeproj; path = ../../Libraries/Camera/RCTCamera.xcodeproj; sourceTree = "<group>"; };
 		DE6C3C711AD3B790004E79F4 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = ../../Libraries/Video/RCTVideo.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,7 +146,6 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				DE6C3C6A1AD3B612004E79F4 /* libRCTLinearGradient.a in Frameworks */,
 				DE6C3C771AD3B79F004E79F4 /* libRCTVideo.a in Frameworks */,
-				DE6C3C781AD3B7A3004E79F4 /* libRCTCamera.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +234,6 @@
 			isa = PBXGroup;
 			children = (
 				DE6C3C711AD3B790004E79F4 /* RCTVideo.xcodeproj */,
-				DE6C3C6B1AD3B76B004E79F4 /* RCTCamera.xcodeproj */,
 				DE6C3C5B1AD3B5D1004E79F4 /* RCTLinearGradient.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
@@ -291,14 +280,6 @@
 			isa = PBXGroup;
 			children = (
 				DE6C3C641AD3B5D1004E79F4 /* libRCTLinearGradient.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DE6C3C6C1AD3B76B004E79F4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DE6C3C701AD3B76B004E79F4 /* libRCTCamera.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -359,10 +340,6 @@
 				{
 					ProductGroup = 00C302B01ABCB8E700DB3ED1 /* Products */;
 					ProjectRef = 00C302AF1ABCB8E700DB3ED1 /* RCTAdSupport.xcodeproj */;
-				},
-				{
-					ProductGroup = DE6C3C6C1AD3B76B004E79F4 /* Products */;
-					ProjectRef = DE6C3C6B1AD3B76B004E79F4 /* RCTCamera.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302B61ABCB90400DB3ED1 /* Products */;
@@ -477,13 +454,6 @@
 			fileType = archive.ar;
 			path = libRCTLinearGradient.a;
 			remoteRef = DE6C3C631AD3B5D1004E79F4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DE6C3C701AD3B76B004E79F4 /* libRCTCamera.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRCTCamera.a;
-			remoteRef = DE6C3C6F1AD3B76B004E79F4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		DE6C3C761AD3B791004E79F4 /* libRCTVideo.a */ = {
