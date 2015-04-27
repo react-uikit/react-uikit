@@ -30,7 +30,15 @@ var Text = require('react-native').Text;
 * Button
 * Countdown
 * Modal
-* Video
-* Camera
 * RefreshableListView
+* SelectableListView
 * Modal
+* SideMenu
+* Tab
+
+## API
+
+* Debug
+* Style
+* Canvas
+* Device
